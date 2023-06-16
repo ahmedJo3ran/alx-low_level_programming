@@ -1,9 +1,13 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
+ * Decription : A C program that print with printf function
+ *
  * Return: Always 0 (Success)
- */
+*/
+
 int main(void)
 {
  
