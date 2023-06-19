@@ -5,9 +5,10 @@
 /**
  * main - Entry point
  *
- * Decription : what number is greater or less
+ * Decription : print the value of n status:
+ *		gerter than, is zero and is not less than 6.
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
@@ -18,11 +19,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	ld = n % 10;
-	if (ld > n)
+	if (ld > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, ld);
 	}
-	else if (ld == n)
+	else if (ld == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, ld);
 	}
