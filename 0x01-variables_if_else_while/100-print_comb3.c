@@ -32,5 +32,6 @@ int main(void)
 			j = i + 1;
 		}
 	}
+	putchar('\n')
 	return (0);
 }
