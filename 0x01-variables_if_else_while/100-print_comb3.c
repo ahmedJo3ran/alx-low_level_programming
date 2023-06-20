@@ -10,27 +10,27 @@
 
 int main(void)
 {
-	int digit1 = 0;
-	int digit2 = 0;
+	int i = 0;
+	int j = 1;
 
-	while (digit1 <= 9)
+	while (i <= 8)
 	{
-		digit2 = 0;
+		putchar(i + '0');
+		putchar(j + '0');
 
-		while (digit2 <= 9)
+		if (i != 8 || j != 9)
 		{
-			if (digit1 != digit2 && !(digit1 == 1 && digit2 == 0))
-			{
-				putchar(digit1 + '0');
-				putchar(digit2 + '0');
-				putchar(',');
-				putchar(' ');
-			}
-
-			digit2++;
+			putchar(',');
+			putchar(' ');
 		}
 
-		digit1++;
+		j++
+			;
+		if (j > 9)
+		{
+			i++;
+			j = i + 1;
+		}
 	}
 	return (0);
 }
